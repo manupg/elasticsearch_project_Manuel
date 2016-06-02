@@ -33,6 +33,13 @@ Para la recogida se usará un programa en Python, que se encargará de coger los
 Para la visualización, se usará Kibana. Este hará las veces de front-end para Elasticsearch y permitirá la generación de distintos diagramas de visionado, que a continuación se plasmarán en los dashboards.
 El objetivo, por tanto, no es solo recoger, guardar y mostrar la información, si no hacerlo de manera clara y que permita un análisis completo de los distintos eventos, respondiendo así a cualquier pregunta que pueda surgir sobre ellos y extrayendo conclusiones claras sobre su comportamiento.</p>
 
+<p><img src="https://raw.githubusercontent.com/manupg/elasticsearch_project_Manuel/master/esquema%20sistema.PNG" alt=""></p>
+
+<p>Los eventos capturados de la API de GitHub son en formato JSON y tienen estructuras y campos distintos según el tipo de evento.
+De esta manera, no contendrá la misma información un evento del tipo PushEvent que uno del tipo PullEvent.</p>
+
+<p><img src="https://raw.githubusercontent.com/manupg/elasticsearch_project_Manuel/master/Evento%20github.PNG" alt=""></p>
+
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/manupg/elasticsearch_project_Manuel">TFG Manuel : Sistema de tratamiento de información con stack ELK</a> is maintained by <a href="https://github.com/manupg">manupg</a>.</span>
 
