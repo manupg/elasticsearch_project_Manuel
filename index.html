@@ -38,17 +38,31 @@ El objetivo, por tanto, no es solo recoger, guardar y mostrar la información, s
 <p>Los eventos capturados de la API de GitHub son en formato JSON y tienen estructuras y campos distintos según el tipo de evento.
 De esta manera, no contendrá la misma información un evento del tipo PushEvent que uno del tipo PullEvent.  </p>
 
+<hr>
+
 <p><img src="https://raw.githubusercontent.com/manupg/elasticsearch_project_Manuel/master/Evento%20github.PNG" alt="">  </p>
+
+<hr>
 
 <p>Una vez indexados los eventos en Elasticsearch, ya sea mediante Logstash o HTTP directamente, se podrá acceder a toda la información mediante el editor Sense. Este utiliza Query DSL basado en JSON para realizar consultas en Elasticsearch.  </p>
 
+<hr>
+
 <p><img src="https://raw.githubusercontent.com/manupg/elasticsearch_project_Manuel/master/indice%20logstash-github.PNG" alt="">  </p>
+
+<hr>
 
 <p>Kibana, el front web mediante el cual se muestra toda la información contenida en los eventos capturados, ofrece una gran variedad de elementos gráficos para la representación de los eventos.  </p>
 
+<hr>
+
 <p><img src="https://raw.githubusercontent.com/manupg/elasticsearch_project_Manuel/master/dasboard2%20(D2).PNG" alt="">  </p>
 
+<hr>
+
 <p><img src="https://raw.githubusercontent.com/manupg/elasticsearch_project_Manuel/master/dashboards%20github%20users%20(geo%20map).PNG" alt="">  </p>
+
+<hr>
 
 <p>El sistema propuesto y resultante, compuesto por pequeños scripts Python para la captura de eventos y preprocesado y el stack ELK para el tratamiento de la información, es una herramienta versátil que , aunque para este proyecto el escenario elegido haya sido GitHub, es perfectamente aplicable a multitud de tipos de información y escenarios.</p>
 
